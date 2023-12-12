@@ -32,6 +32,9 @@ header{
 
 }
 
+
+
+
 nav ul{
 display: flex;
 margin-top: 0;
@@ -73,10 +76,102 @@ nav ul li a{
 #about h2{
   text-align: center;
   text-decoration: underline;
-  
+  color: burlywood;
+  font-size: 32px;
 }
 
 #about p{
   width: 600px;
   margin: 0 auto;
+}
+
+#work{
+  text-align: center;
+  margin-top: 30px ;
+}
+
+#work h2{
+  text-decoration: underline;
+  font-size: 32px;
+  color: burlywood;
+}
+
+.grid-container{
+  height: 300px;
+  grid-gap: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr  ;
+  grid-template-columns: 1fr 1fr 1fr  ;
+  grid-template-areas: 
+  "first-project second-project third-project"
+  "fourth-project fifth-project sixth-project" 
+  ;
+  
+}
+
+.first-project{
+  grid-area: first-project;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/02-portfolio-1.jpg");
+
+}
+
+.second-project{
+  grid-area: second-project;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+.third-project{
+  grid-area: third-project;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+.fourth-project{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: fourth-project;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+.fifth-project{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: fifth-project;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.sixth-project{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: sixth-project;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.grid-item{
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+ 
+}
+
+.grid-item:hover{
+  transform: scale(1.4);
+}
+
+.grid-item p{
+  margin-top: 100px;
+  margin-left: 20px;
+  text-align: left;
+  color: yellow;
+  font-size: 24px;
 }

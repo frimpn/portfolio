@@ -48,3 +48,20 @@ nav ul li a{
   text-decoration: none;
   cursor: pointer;
 }
+
+.hero-banner{
+  background-image: url("../images/02-hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  padding-top: 70px;
+}
+
+.hero-banner div h2{
+  color: orange; 
+  margin-left: 400px;
+ font-size: 48px;
+
+
+}

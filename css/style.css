@@ -215,16 +215,11 @@ nav ul li a{
   margin-bottom: 30px;
 }
 
-.grid-container{
-  grid-row: 20px;
+.grid-item:hover{
+transform: scale(1.2);
 }
 
-
-
-
-
-
-  #contact{
+#contact{
     flex-direction: column;
   }
 
